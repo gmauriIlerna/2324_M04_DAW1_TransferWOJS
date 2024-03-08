@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
+
 <body>
     <label for="username">Username:</label>
     <input type="text" id="username">
@@ -18,17 +17,6 @@
     <input type="text" id="color">
     <br>
     <button onclick="saveData()">Save Data</button>
-
-    <script>
-        function saveData() {
-            var username = document.getElementById('username').value;
-            var color = document.getElementById('color').value;
-
-            localStorage.setItem('username', username);
-            localStorage.setItem('color', color);
-
-            window.location.href = 'second.html';
-        }
-    </script>
 </body>
+
 </html>

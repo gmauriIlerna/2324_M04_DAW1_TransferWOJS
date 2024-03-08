@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
-<body>
+
+<body onload="loadData()">
     <h1 id="usernameDisplay">hasah</h1>
-
-    <script>
-        
-        var username = localStorage.getItem('username');
-        var color = localStorage.getItem('color');
-
-        
-        document.getElementById('usernameDisplay').textContent = username;
-
-        
-        document.body.style.backgroundColor = color;
-    </script>
 </body>
+
 </html>
